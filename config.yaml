@@ -1,0 +1,4 @@
+# created by init task for use with github actons
+target_repo: ghcr.io/bradfordwagner/redis-mirror
+builds:
+  - { repo: docker.io/redis, tag: 7.0.4-alpine, repo_override: redis, platforms: [linux/amd64, linux/arm64] }
