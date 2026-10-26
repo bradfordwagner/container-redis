@@ -16,7 +16,7 @@ jobs:
         with:
           yq-version: v4.43.1
       - name: jq=1.7
-        uses: dcarbone/install-jq-action@v2
+        uses: dcarbone/install-jq-action@4fcb5062d7ce9bc4382d1a352d19ba3ba2c317c1 # v4
         with:
           version: 1.7
       - name: export=config
