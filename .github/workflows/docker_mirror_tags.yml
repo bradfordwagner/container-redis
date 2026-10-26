@@ -10,7 +10,7 @@ jobs:
     outputs:
       config: ${{ steps.config.outputs.config }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       # https://github.com/chrisdickinson/setup-yq/blob/latest/action.yml
       - uses: chrisdickinson/setup-yq@v1.0.1
         name: yq=v4.43.1
@@ -34,13 +34,13 @@ jobs:
         build: ${{ fromJSON(needs.config-yaml.outputs.config).builds }}
     steps:
       - name: checkout=self
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - name: task=3.35.1
         uses: pnorton5432/setup-task@v1
         with:
           task-version: 3.35.1
       - name: checkout=taskfiles@main
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           path: taskfiles
           repository: bradfordwagner/taskfiles
