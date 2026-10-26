@@ -35,9 +35,9 @@ jobs:
       - name: checkout=self
         uses: actions/checkout@v4
       - name: task=3.35.1
-        uses: pnorton5432/setup-task@v1
+        uses: go-task/setup-task@v2.2.0
         with:
-          task-version: 3.35.1
+          version: 3.35.1
       - name: checkout=taskfiles@main
         uses: actions/checkout@v4
         with:
