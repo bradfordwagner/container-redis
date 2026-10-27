@@ -3,7 +3,7 @@ flavor: mirror
 builds:
     - repo: docker.io/redis
       repo_override: redis
-      tag: 7.0.14-alpine
+      tag: 7.4.12-alpine
       archs:
         - linux/amd64
         - linux/arm64
